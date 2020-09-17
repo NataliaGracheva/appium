@@ -1,10 +1,12 @@
-import PageObject.Main;
-import initPoint.CoreTestCase;
+package tests.Android;
+
+import pageObject.Main;
+import initPoint.testCases.AndroidTestCase;
 import org.junit.Assert;
-import org.openqa.selenium.*;
+import org.openqa.selenium.ScreenOrientation;
 
 
-public class Test extends CoreTestCase {
+public class Android_test extends AndroidTestCase {
     public Main mainMethods;
 
     public void setUp() throws Exception {
@@ -62,7 +64,7 @@ public class Test extends CoreTestCase {
 
     @org.junit.Test
     public void test_swipe_up() {
-        swipe.swipeToFilm("Made in Italy");
+        swipe.swipeToFilm("Made in Italy", 15);
     }
 
     @org.junit.Test // тест, проверяющий запуск в горизонтальной ориентации и свайп вправо

@@ -1,4 +1,4 @@
-package PageObject;
+package pageObject;
 
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
@@ -11,10 +11,10 @@ public class SwipePageObject extends Main {
         super(driver);
     }
 
-    public void swipeToFilm(String film) {
+    public void swipeToFilm(String film, int max_swipes) {
         String xPath = searchedFilm.replace("{substring}", film);
         this.swipeUpToFindElement(
-                By.xpath(xPath), "Не смог найти фильм " + film, 3
+                By.xpath(xPath), "Не смог найти фильм " + film, max_swipes
         );
     }
 

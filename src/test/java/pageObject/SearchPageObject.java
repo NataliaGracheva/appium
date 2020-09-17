@@ -1,4 +1,4 @@
-package PageObject;
+package pageObject;
 
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
@@ -8,8 +8,8 @@ public class SearchPageObject extends Main {
             searchButton = "dev.akat.filmreel:id/menu_search_action",
             searchInput = "dev.akat.filmreel:id/search_src_text",
             currentFilm = "//*[contains(@text, '{substring}')]",
-            collapseButton = "//android.widget.ImageButton[@content-desc=\"Свернуть\"]",
-            goUpButton = "//android.widget.ImageButton[@content-desc=\"Перейти вверх\"]";
+            collapseButton = "//android.widget.ImageButton[@content-desc=\"Collapse\"]",
+            goUpButton = "//android.widget.ImageButton[@content-desc=\"Navigate up\"]";
 
     public SearchPageObject(AppiumDriver driver) {
         super(driver);
